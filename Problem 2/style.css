@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.product-card {
+    position: relative;
+    width: 80%;
+    margin: 2em auto;
+    border-radius: 20px;
+    box-shadow: rgba(0, 255, 255, 0.35) 0px 5px 15px;
+    border: 1px solid rgb(128, 128, 128, 0.2);
+}
+
+.img img {
+    height: 40vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% top;
+    border-bottom: 1px solid black;
+    content: url('/tshirt.jpeg');
+}
+
+.img:hover img {
+    content: url('/back.jpeg');
+}
+
+#discount {
+    position: absolute;
+    top: -7vw;
+    right: -7vw;
+    color: white;
+    background-color: rgb(240, 128, 128, 0.7);
+    border-radius: 100%;
+    width: 14vw;
+    height: 14vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    box-shadow: rgb(240, 128, 128, 0.7) 0px 5px 15px;
+}
+
+.product-details {
+    padding: 0 0.7em;
+}
+
+.prod-name-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prod-name, .prod-price {
+    display: flex;
+    flex-direction: column;
+}
+
+.prod-name span:nth-child(1) {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.prod-name span:nth-child(2) {
+    color: gray;
+}
+
+.prod-price span:nth-child(1) {
+    color: blueviolet;
+    font-weight: bold;
+}
+
+.prod-price span:nth-child(2) {
+    color: gray;
+}
+
+.size {
+    margin: 1em 0;
+    width: 100%;
+}
+
+.sizes {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tag-quantity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 0;
+}
+
+.tag {
+    background-color: lightcoral;
+    border-radius: 20px;
+    padding: 0.3em 0.5em;
+    color: white;
+    height: 1.5em;
+}
+
+.quantity {
+    font-size: 1.5rem;
+}
+
+.quantity button {
+    color: green;
+    border-radius: 5px;
+    background-color: rgba(22, 250, 22, 0.3);
+    padding: 0 0.1em;
+    font-size: 2rem;
+    margin: 0 0.05em;
+    outline: none;
+    border: 0;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn button {
+    width: 47%;
+    margin: 1em 0.2em;
+    color: white;
+    border: 0;
+    padding: 0.5em;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+
+.btn button:nth-child(1) {
+    background-color: yellow;
+}
+
+.btn button:nth-child(2) {
+    background-color: orange;
+}
